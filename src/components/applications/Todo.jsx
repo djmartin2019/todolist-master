@@ -28,27 +28,32 @@ class Todo extends Component {
     }
     render(){
        return(
-        <div className="col-11 bg-white text-center text-dark">
-            <h1 className="p-3">Todo list</h1>
-            <div className="header">
-                <form onSubmit={this.addItem}>
-                    <div className="justify-content-center input-group mb-3">
-                        <input ref={(a) => this._inputElement = a} placeholder="Enter Task"/> &nbsp;
-                        <div className="input-group-append">
-                            <button type="submit" className="btn btn-info">Add</button>
-                        </div>
-                    </div>
-                </form> 
-            </div>
+        <React.Fragment>
             <div className="row">
-                <div className="col-4"/>
-                <div className="col-4 justifty-content-center">
-                    <TodoItems entries={this.state.items}/>
-                </div>
-                <div className="col-4"/>
+                <div className="col-1"/>
+                <div className="col-10 bg-white text-center text-dark">
+                    <h1 className="p-3">Todo list</h1>
+                    <div className="header">
+                        <form onSubmit={this.addItem}>
+                            <div className="justify-content-center input-group mb-3">
+                                <input ref={(a) => this._inputElement = a} placeholder="Enter Task"/> &nbsp;
+                                <div className="input-group-append">
+                                    <button type="submit" className="btn btn-info">Add</button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                    <div className="row">
+                        <div className="col-4"/>
+                        <div className="col-4 justifty-content-center">
+                            <TodoItems entries={this.state.items}/>
+                        </div>
+                        <div className="col-4"/>
+                    </div>
+                </div> 
             </div>
-            
-        </div>       
+                 
+        </React.Fragment>
     ); 
     }
 }

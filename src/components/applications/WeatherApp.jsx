@@ -28,11 +28,17 @@ class WeatherApp extends Component{
 
         render(){
             return(
-            <div>
-                {this.formatDayCards()}
-            </div> 
+            <React.Fragment>
+                <div className="row">
+                    <div className="col-1">
+                        <div className="col-10">
+                            {this.formatDayCards()}
+                        </div> 
+                    </div>
+                </div>
+            </React.Fragment>
             );
-    }
+        }
 }
 
 export default WeatherApp;

@@ -42,3 +42,8 @@
   color: rgb(65, 93, 109);
   opacity: 0.5;
   }
+
+.shading{
+  padding: 10px;
+  box-shadow: 5px 7px #919191;
+}

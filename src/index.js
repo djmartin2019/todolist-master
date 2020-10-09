@@ -13,17 +13,17 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
       <div className="row">
-        <div className="col-12">
+        <div className="col">
           <Navbar/>
         </div>
       </div>
+      
       <div className="row bg-dark text-white">
-        <div className="col-2 d-flex align-items-stretch">
+        {/* <div className="col-2 d-flex align-items-stretch">
           <Sidebar/>
-        </div>
-        <div className="col-10 d-flex align-items-stretch flex-column pt-3 pb-3">
+        </div> */}
+        <div className="col d-flex align-items-stretch flex-column pt-3 pb-3">
           <Router>
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
@@ -33,8 +33,6 @@ ReactDOM.render(
           </Router>
         </div>
       </div>
-    </div>
-      
   </React.StrictMode>,
   document.getElementById('root')
 );
