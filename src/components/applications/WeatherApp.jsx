@@ -9,7 +9,7 @@ class WeatherApp extends Component{
         }
         
         componentDidMount = () => {
-            const weatherURL =  `http://api.openweathermap.org/data/2.5/forecast?zip=11102&units=imperial&APPID=${apiConfig}`;
+            const weatherURL =  `api.openweathermap.org/data/2.5/forecast?zip=11102&units=imperial&APPID={apiConfig}`;
 
         fetch(weatherURL)
             .then(res => res.json())
