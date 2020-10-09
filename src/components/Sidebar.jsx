@@ -4,7 +4,7 @@ import '../styling/App.css';
 
 function Sidebar(){
     return(
-        <div className="col-8 bg-white text-dark">
+        <div className="bg-white text-dark">
             <nav className="sidebar-nav">
                 <ul className="nav thumbnail">
                     <li className="nav-title">

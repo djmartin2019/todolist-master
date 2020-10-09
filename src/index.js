@@ -20,10 +20,10 @@ ReactDOM.render(
         </div>
       </div>
       <div className="row bg-dark text-white">
-        <div className="col-2">
+        <div className="col-2 d-flex align-items-stretch">
           <Sidebar/>
         </div>
-        <div className="col-10 pt-3 pb-3">
+        <div className="col-10 d-flex align-items-stretch flex-column pt-3 pb-3">
           <Router>
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
