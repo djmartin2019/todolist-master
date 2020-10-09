@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 class TodoItems extends Component{
     createTasks(item){
-        return <li key={item.key}>{item.text}</li>
+        return <li className="list-group-item" key={item.key}>{item.text}</li>
     }
 
     render(){
@@ -10,7 +10,7 @@ class TodoItems extends Component{
         var listItems = todoEntries.map(this.createTasks);
 
         return(
-            <ul className="theList">
+            <ul className="list-group p-3">
                 {listItems}
             </ul>
         );
