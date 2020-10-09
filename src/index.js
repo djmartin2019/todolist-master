@@ -28,8 +28,8 @@ ReactDOM.render(
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
             <Route path="/todo" component={Todo} />
-            <Route path="/weather" component={ProductivityTracker} />
-            <Route path="/productivity" component={WeatherApp} />
+            <Route path="/productivity" component={ProductivityTracker} />
+            <Route path="/weather" component={WeatherApp} />
           </Router>
         </div>
       </div>
