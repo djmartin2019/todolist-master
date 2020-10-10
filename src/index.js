@@ -9,6 +9,8 @@ import Sidebar from './components/Sidebar.jsx';
 import ProductivityTracker from './components/applications/ProductivityTracker.jsx';
 import WeatherApp from './components/applications/WeatherApp.jsx';
 import Todo from './components/applications/Todo.jsx';
+import Restaurants from './components/applications/Restaurants.jsx';
+import Login from './components/Login.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -30,6 +32,8 @@ ReactDOM.render(
             <Route path="/todo" component={Todo} />
             <Route path="/productivity" component={ProductivityTracker} />
             <Route path="/weather" component={WeatherApp} />
+            <Route path="/restaurants" component={Restaurants}/>
+            <Route path="/login" component={Login}/>
           </Router>
         </div>
       </div>
