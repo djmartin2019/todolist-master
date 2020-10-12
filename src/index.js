@@ -6,10 +6,10 @@ import Navbar from './components/Navbar.jsx';
 import App from './components/App.jsx';
 import About from './components/About.jsx';
 import Sidebar from './components/Sidebar.jsx';
-import ProductivityTracker from './components/applications/ProductivityTracker.jsx';
-import WeatherApp from './components/applications/WeatherApp.jsx';
-import Todo from './components/applications/Todo.jsx';
-import Restaurants from './components/applications/Restaurants.jsx';
+import ProductivityTracker from './components/productivity/ProductivityTracker.jsx';
+import WeatherApp from './components/weather/WeatherApp.jsx';
+import Todo from './components/todo/Todo.jsx';
+import Restaurants from './components/restaurants/Restaurants.jsx';
 import Login from './components/Login.jsx';
 import * as serviceWorker from './serviceWorker';
 
