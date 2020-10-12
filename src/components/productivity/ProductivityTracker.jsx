@@ -5,7 +5,8 @@ import NewProdItems from './NewProdItems';
 
 const ProductivityTracker = () => {
     const [prodVal, setValue] = useState([
-        {id: 'cg1', val: '25'}
+        {id: 'cg1', val: '25', name: 'Code'},
+        {id: 'cg2', val: '50', name: 'Play Piano'}
     ]);
 
     const addNewProdHandler = newProd => {

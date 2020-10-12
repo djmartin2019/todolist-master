@@ -9,10 +9,10 @@ const ProductivityItems = props => {
     return(
         <ul className="prod-list">
             {props.prods.map(prod => {
-                return <li key={prod.id}><RangeSlider
-                value={prod.val}
-                onChange={changeEvent => updateVal(changeEvent.target.val)}
-              /></li>
+                return <li key={prod.id}>
+                    <div>{prod.name}:</div>
+                    <div><RangeSlider value={prod.val} onChange={changeEvent => updateVal(changeEvent.target.val)}/></div>
+                </li>
             })}
         </ul>
     );

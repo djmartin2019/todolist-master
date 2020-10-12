@@ -20,12 +20,11 @@ ReactDOM.render(
           <Navbar/>
         </div>
       </div>
-      
       <div className="row bg-dark text-white">
         {/* <div className="col-2 d-flex align-items-stretch">
           <Sidebar/>
         </div> */}
-        <div className="col d-flex align-items-stretch flex-column pt-3 pb-3">
+        <div className="col pt-3 pb-3">
           <Router>
             <Route exact path="/" component={App} />
             <Route path="/about" component={About} />
